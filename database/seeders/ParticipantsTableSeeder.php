@@ -2,18 +2,19 @@
 
 namespace Database\Seeders;
 
+use App\Models\Participants;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class ParticipantsTableSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        $this->call(ParticipantsTableSeeder::class);
+        \App\Models\Participants::factory(1)->create();
     }
 }
