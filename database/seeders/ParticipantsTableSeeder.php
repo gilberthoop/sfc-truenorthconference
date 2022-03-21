@@ -15,6 +15,6 @@ class ParticipantsTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Participants::factory(1)->create();
+        \App\Models\Participants::factory(10)->create();
     }
 }
