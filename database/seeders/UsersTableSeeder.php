@@ -2,11 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Participants;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ParticipantsTableSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +14,6 @@ class ParticipantsTableSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Participants::factory(10)->create();
+        \App\Models\User::factory(10)->create();
     }
 }
